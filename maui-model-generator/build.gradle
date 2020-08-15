@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'com.mochis'
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.github.haifengl:smile-core:${smileVersion}"
+    implementation "com.thoughtworks.xstream:xstream:${xstreamVersion}"
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
